@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background:
+                    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)),
+                    url("https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1600&q=80");
+
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .login-container {
+            width: 380px;
+            padding: 35px;
+            background-color: rgba(15, 15, 15, 0.9);
+            border: 2px solid #c90000;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(201, 0, 0, 0.7);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 36px;
+            letter-spacing: 3px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #bbbbbb;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #555;
+            border-radius: 6px;
+            background-color: #222;
+            color: white;
+            font-size: 16px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #ff0000;
+            box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 6px;
+            background-color: #c90000;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff0000;
+        }
+
+        footer {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        footer h2 {
+            font-size: 16px;
+            font-weight: normal;
+            color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="login-container">
+
+    <h1>Login</h1>
+
+    <p class="subtitle">
+        Welcome to the Driver Portal
+    </p>
+
+    <form>
+
+        <label for="username">Username</label>
+
+        <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                required
+        >
+
+        <label for="password">Password</label>
+
+        <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+        >
+
+        <button type="submit">
+            Submit
+        </button>
+
+    </form>
+
+</main>
+
+<footer>
+    <h2>Deven Acevedo &copy; July 30, 2026</h2>
+</footer>
+
+</body>
+</html>
