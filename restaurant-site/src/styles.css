@@ -1,0 +1,189 @@
+/* Turquoise and teal represent the tropical ocean setting,
+ while brass and dark brown represent the steampunk theme. Cream keeps the site warm
+ and readable.
+
+ Font Awesome utensil icon is used beside our Menu heading
+ */
+
+body {
+    background: linear-gradient(to bottom, #d8efed, #f4ead5 350px);
+    color: #2b2118;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Cinzel", serif;
+    margin-bottom: 5px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #2b2118;
+    padding: 20px;
+    border-bottom: 3px solid #d4a84f;
+    }
+nav a {
+    color: #d4a84f;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 6px;
+        }
+nav a:hover {
+    background-color: #49b6b2;
+    color: #2b2118;
+}
+
+.hero{
+    text-align: center;
+    width: 70%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff8e8;
+    border: 2px solid #d4a84f;
+    border-radius: 12px;
+}
+.hero p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.logo{
+    width: 250px;
+}
+
+.hero-image{
+    width:900px;
+    border-radius: 12px;
+}
+
+.card {
+    background-color: #fff8e8;
+    padding: 20px;
+    border: 2px solid #d4a84f;
+    border-radius:10px;
+}
+
+table{
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #2b2118;
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #2b2118;
+    color: #d4a84f;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff8e8;
+}
+
+tbody tr:hover{
+    background-color: #d8efed;
+}
+
+caption {
+    font-family: "Cinzel", serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+.menu-intro{
+    text-align: center;
+    margin: 30px auto;
+}
+.menu-image {
+    display: block;
+    width: 700px;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+form {
+    width: 50%;
+    margin: 30px auto;
+    padding: 25px;
+}
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #d4a84f;
+    border-radius: 6px;
+}
+form input:focus, form select:focus, form textarea:focus {
+    outline: 2px solid #49b6b2;
+
+}
+
+form input[type="radio"],
+form input[type="checkbox"]{
+    width: auto;
+}
+form input[type="radio"] + label,
+form input[type="checkbox"] + label {
+    display: inline;
+    margin-right: 15px;
+}
+
+fieldset {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #d4a84f;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    font-family: "Cinzel", serif;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #2b2118;
+    color: #d4a84f;
+    border: none;
+}
+button:hover {
+    background-color: #49b6b2;
+    color: #2b2118;
+}
+
+.reservation-intro {
+    text-align: center;
+    margin: 30px auto;
+}
+.reservation-image {
+    display: block;
+    width: 700px;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+.hero, .menu-image, .reservation-image, .card {
+    box-shadow: 0 4px 12px rgba(43, 33, 24, 0.18);
+}
+

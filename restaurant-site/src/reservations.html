@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El Caldero del Mar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="reservations.html">Reservations</a>
+</nav>
+
+<div class="reservation-intro">
+
+<h1>Reservations</h1>
+
+<p>
+    Submit a reservation request below. Reservations are not confirmed until approved by El Caldero del Mar.
+</p>
+</div>
+
+<img class="reservation-image" src="images/reservation-dining.png" alt="Outdoor dining terrace at El Caldero del Mar overlooking the harbour">
+
+<form class="card">
+    <label for="name">Name:</label>
+    <input type="text"
+           id="name"
+           name="name"
+           maxlength="20"
+           required>
+
+    <label for="email">Email:</label>
+    <input type="email"
+           id="email"
+           name="email"
+           required>
+
+    <label for="party-size">Party Size:</label>
+
+    <select id="party-size" name="party-size" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+    </select>
+
+    <label for="date">Date:</label>
+    <input type="date"
+           id="date"
+           name="date"
+           required>
+
+    <label for="time">Time:</label>
+    <input type="time"
+           id="time"
+           name="time"
+           required>
+
+    <fieldset>
+        <legend>Seating Preference:</legend>
+
+        <input type="radio" id="indoor" name="seating" value="indoor" required>
+        <label for="indoor">Indoor</label>
+
+        <input type="radio" id="outdoor" name="seating" value="outdoor">
+        <label for="outdoor">Outdoor</label>
+
+        <input type="radio" id="harbor" name="seating" value="harbor">
+        <label for="harbor">Harbor View</label>
+    </fieldset>
+
+    <label for="dietary">Dietary Notes:</label>
+
+    <textarea id="dietary"
+              name="dietary"
+              maxlength="30"></textarea>
+    <input type="checkbox"
+           id="newsletter"
+           name="newsletter">
+
+    <label for="newsletter">Sign me up for the Salty Bulldog newsletter</label>
+
+    <button type="submit">Submit Reservation</button>
+    <button type="reset">Reset Form</button>
+
+</form>
+
+</body>
+
+</html>
